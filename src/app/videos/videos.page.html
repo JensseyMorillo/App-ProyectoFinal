@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Videos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card *ngFor="let videos of getdata">
+    <iframe width="230" height="150" src="https://www.youtube.com/embed/PMW8U0SPyEo"></iframe>
+    <ion-card-header>
+      <ion-card-title>{{videos.titulo}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{videos.fecha}}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

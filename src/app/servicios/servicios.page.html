@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Servicios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let servicios of getdata">
+    <img alt="Silhouette of mountains" src="{{servicios.foto}}" />
+    <ion-card-header>
+      <ion-card-title><b>{{servicios.nombre}}</b></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{servicios.descripcion}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" color="warning" shape="round" (click)="scrollToTop()">Volver arriba</ion-button>
+
+</ion-content>

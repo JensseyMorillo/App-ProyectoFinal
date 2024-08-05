@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container-fluid">
+    <div class="row mt-4">
+      <div class="col-8 offset-2">
+        <form>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input
+              type="email"
+              class="form-control"
+              id="correo"
+              name="cedula"
+              #cedula
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Cedula</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cedula"
+              name="cedula"
+              #cedula
+            />
+          </div>
+          <div class="float-end">
+            <a href="/iniciarsesion" class="btn btn-secondary m-1">Volver atrás</a>
+            <button
+              type="button"
+              class="btn btn-primary m-1"
+              (click)="sendData()"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>

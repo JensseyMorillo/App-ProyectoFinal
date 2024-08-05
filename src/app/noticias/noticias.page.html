@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let noticias of getdata">>
+    <img alt="Silhouette of mountains" src="{{noticias.foto}}" />
+    <ion-card-header>
+      <ion-card-title><b>{{noticias.titulo}}</b></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{noticias.fecha}}</p>
+      <p>{{noticias.contenido}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" color="warning" shape="round" (click)="scrollToTop()">Volver arriba</ion-button>
+
+</ion-content>

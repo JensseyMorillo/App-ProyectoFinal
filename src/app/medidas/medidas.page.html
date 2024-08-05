@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Medidas preventivas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>Temporada Ciclónica</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content" *ngFor="let item of getdata">
+        {{item.descripcion}}
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>Derrumbe o Deslizamiento</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        Un derrumbe o deslizamiento se define como el movimiento pendiente abajo, lento o súbito de una ladera, 
+        formada por materiales naturales: roca, suelo, vegetación o bien rellenos artificiales. 
+        Representa uno de los procesos geológicos más destructivos que afectan a los seres humanos. 
+        Se presentan sobre todo en la época lluviosa o durante períodos de actividad sísmica.
+        ¿Qué hacer en caso de Derrumbe o Deslizamiento? Elaboremos juntos el plan familiar de emergencias. 
+        Es sencillo y puede salvar la vida de nuestra familia.Con los miembros de la familia preparemos el maletín para emergencias, 
+        con alimentos no perecederos, radio, foco, documentos personales, medicinas y protectores para cubrir la nariz.
+        Acudamos a las autoridades locales para saber si la zona en que vivimos está expuesta a este tipo de riesgos.
+        Evaluemos el entorno en que habitamos e identifiquemos lugares donde pueden presentarse deslizamientos (derrumbes).
+        Averigüemos con vecinos y amigos sobre posibles deslizamientos ocurridos en el pasado.
+        Determinemos si las características de este sitio hacen suponer la existencia de terrenos inestables. (grietas, lloraderos de agua, árboles inclinados, pisos agrietados, escalones y otros).
+        En épocas de lluvia o temporales prolongados o bien actividad sísmica intensa, mantengamos permanente vigilancia del sector 
+        y alejémonos lo más posible, e informemos a los vecinos y autoridades competentes si observa algo anómalo.
+        Si tenemos dudas busquemos asesoría en la Municipalidad o bien con el responsable del Comité Municipal o Comunal de Emergencia.
+        Respondamos a tiempo. Mantengamos la calma.Si el deslizamiento es en una vía, 
+        procuremos avisar a otros conductores y a las autoridades respectivas.Por ningún motivo intentemos cruzar el área afectada. 
+        Más bien alejémonos lo más posible, podría seguir cayendo materiales sobre los sectores aledaños.
+        Identifiquemos sin acercarse demasiado, si existe otra infraestructura afectada o en peligro (tendido eléctrico, 
+        acueductos, tubería de aguas negras u otras viviendas) y comuniquémoslo inmediatamente.
+        Si ocurre un deslizamiento en una ladera en la parte superior de la cuenca, tanto de un río o quebrada y hay represamiento del caudal, 
+        informemos inmediatamente a las autoridades, ya que existe la probabilidad de una avalancha, \"cabeza de agua\" 
+        arrastrando todo aquello a su paso: viviendas, puentes y vehículos. Si el deslizamiento es en una carretera, 
+        avisemos a las autoridades y a los otros conductores para ponerlos en alerta.
+        Permanezcamos en un lugar seguro y estemos atentos al informe oficial de la CNE donde indique que todo ha vuelto a la normalidad.nDespués 
+        Mantengámonos alejado del área del derrumbe, ya que se podrían generar más eventos. nRegresemos a las casas, solamente cuando las autoridades lo indiquen. nEs recomendable reforestar el terreno dañado por un derrumbe, ya que la erosión que se genera por la pérdida del suelo podría causar inundaciones repentinas y otros derrumbes. nJunto con las autoridades, revisemos las cuencas del río y quebradas para determinar si hay represamiento del cauce.
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>
